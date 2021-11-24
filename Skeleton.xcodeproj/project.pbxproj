@@ -13,6 +13,8 @@
 		88766A08274E71C500F42D2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88766A06274E71C500F42D2B /* Main.storyboard */; };
 		88766A0A274E71C700F42D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88766A09274E71C700F42D2B /* Assets.xcassets */; };
 		88766A0D274E71C700F42D2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88766A0B274E71C700F42D2B /* LaunchScreen.storyboard */; };
+		88766A16274E728500F42D2B /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 88766A15274E728500F42D2B /* SkeletonView */; };
+		88766A18274E747800F42D2B /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88766A17274E747800F42D2B /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		88766A09274E71C700F42D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88766A0C274E71C700F42D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88766A0E274E71C700F42D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88766A17274E747800F42D2B /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88766A16274E728500F42D2B /* SkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				88766A00274E71C500F42D2B /* AppDelegate.swift */,
 				88766A02274E71C500F42D2B /* SceneDelegate.swift */,
 				88766A04274E71C500F42D2B /* ViewController.swift */,
+				88766A17274E747800F42D2B /* MyTableViewCell.swift */,
 				88766A06274E71C500F42D2B /* Main.storyboard */,
 				88766A09274E71C700F42D2B /* Assets.xcassets */,
 				88766A0B274E71C700F42D2B /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Skeleton;
+			packageProductDependencies = (
+				88766A15274E728500F42D2B /* SkeletonView */,
+			);
 			productName = Skeleton;
 			productReference = 887669FD274E71C500F42D2B /* Skeleton.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 887669F4274E71C500F42D2B;
+			packageReferences = (
+				88766A14274E728500F42D2B /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			productRefGroup = 887669FE274E71C500F42D2B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88766A05274E71C500F42D2B /* ViewController.swift in Sources */,
+				88766A18274E747800F42D2B /* MyTableViewCell.swift in Sources */,
 				88766A01274E71C500F42D2B /* AppDelegate.swift in Sources */,
 				88766A03274E71C500F42D2B /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88766A14274E728500F42D2B /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88766A15274E728500F42D2B /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88766A14274E728500F42D2B /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 887669F5274E71C500F42D2B /* Project object */;
 }
